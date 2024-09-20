@@ -1,5 +1,6 @@
 package dao;
 
+import domain.Aula;
 import persistence.JPAUtil;
 
 public class AulaDAO {
@@ -9,9 +10,9 @@ public class AulaDAO {
         jpaUtil = new JPAUtil();
     }
 
-    public void save(AulaDAO aulaDAO){
+    public void save(Aula aula){
         jpaUtil.getEntityManager().getTransaction().begin();
-        jpaUtil.getEntityManager().persist(aulaDAO);
+        jpaUtil.getEntityManager().persist(aula);
         jpaUtil.getEntityManager().getTransaction().commit();
     }
 }
