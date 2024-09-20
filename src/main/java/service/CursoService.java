@@ -1,8 +1,5 @@
 package service;
 
-<<<<<<< HEAD
-public class CursoService {
-=======
 import dao.CursoDAO;
 import domain.Curso;
 
@@ -18,5 +15,4 @@ public class CursoService {
     public void save(Curso curso) {
         cursoDAO.save(curso);
     }
->>>>>>> bruno
 }
