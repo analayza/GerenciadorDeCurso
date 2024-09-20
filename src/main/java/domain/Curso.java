@@ -21,7 +21,7 @@ public class Curso {
     private String titulo;
 
     @ManyToMany(cascade = CascadeType.ALL)
-    private Usuario usuario;
+    private List<Usuario> usuario;
 
     @OneToMany(cascade = CascadeType.ALL)
     private List<Modulo> modulo;
