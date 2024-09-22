@@ -13,13 +13,18 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "modulo.getAll", query = "select p from Modulo p"),
+})
 public class Modulo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
 
-    @OneToMany
+    private String nome;
+
+    @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private List<Aula> aula;
 
 }
