@@ -17,9 +17,11 @@ import javax.validation.constraints.Size;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+
+@NamedQueries({
+        @NamedQuery(name= "usuarioGetAll", query = "select u from Usuario u")
+})
 public class Usuario {
-
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,7 +33,5 @@ public class Usuario {
     private String email;
     private String senha;
     private String tipo;
-
-
 
 }
