@@ -21,6 +21,6 @@ public class Main {
                 .tipo("aluno")
                 .build();
 
-        usuarioService.save(usuario);
+        //usuarioService.save(usuario);
     }
 }

@@ -13,6 +13,9 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@NamedQueries(
+        @NamedQuery(name = "curso.getAll", query = "select c from Curso c")
+)
 public class Curso {
 
     @Id
