@@ -1,6 +1,7 @@
 package dao;
 
 import domain.Curso;
+import domain.Usuario;
 import persistence.JPAUtil;
 
 import java.util.List;
@@ -8,9 +9,11 @@ import java.util.List;
 public class CursoDAO {
 
     private JPAUtil jpaUtil;
+    private UsuarioDAO usuarioDAO;
 
     public CursoDAO(){
         jpaUtil = new JPAUtil();
+        usuarioDAO = new UsuarioDAO();
     }
     public void save(Curso curso){
         jpaUtil.getEntityManager().getTransaction().begin();
@@ -34,6 +37,50 @@ public class CursoDAO {
         var query = jpaUtil.getEntityManager()
                 .createNamedQuery("curso.getAll");
         return query.getResultList();
+    }
+
+    public void addUsuarios(Long id_curso, Long id_usuario){
+        var idExiste = getById(id_curso);
+        var idExisteUsuario = usuarioDAO.findById(id_usuario);
+        if(idExiste.getId() != null && idExisteUsuario != null){
+
+            var query = jpaUtil.getEntityManager()
+                    .createNativeQuery("INSERT INTO curso_usuario (curso_id, usuario_id) " +
+                            "VALUES (:id_curso, :id_usuario)");
+
+            query.setParameter("id_curso", id_curso);
+            query.setParameter("id_usuario", id_usuario);
+
+            query.executeUpdate();
+            jpaUtil.getEntityManager().getTransaction().commit();
+
+        }
+        else{
+            System.out.println("O Curso ou o Usuario, não existe");
+        }
+
+    }
+
+    public void addModulo(Long id_curso, Long id_modulo){
+        var idExiste = getById(id_curso);
+        var idExisteModulo = usuarioDAO.findById(id_modulo);
+        if(idExiste.getId() != null && idExisteModulo != null){
+
+            var query = jpaUtil.getEntityManager()
+                    .createNativeQuery("INSERT INTO curso_modulo (curso_id, modulo_id) " +
+                            "VALUES (:id_curso, :id_modulo)");
+
+            query.setParameter("id_curso", id_curso);
+            query.setParameter("id_modulo", id_modulo);
+
+            query.executeUpdate();
+            jpaUtil.getEntityManager().getTransaction().commit();
+
+        }
+        else{
+            System.out.println("O Curso ou o Modulo, não existe");
+        }
+
     }
 
     public String delete(Long id){
