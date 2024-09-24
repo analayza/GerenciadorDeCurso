@@ -1,0 +1,18 @@
+
+Y
+java:S1854"<Remove this useless assignment to local variable "usuario2".(ÅŠîî8ñ•ÉÛ¡2
+V
+java:S1854	";Remove this useless assignment to local variable "usuario".(¸ŠÙšüÿÿÿÿ
+d
+java:S1854"BRemove this useless assignment to local variable "usuarioService".(î€‹ÿÿÿÿÿ8»÷ÎÛ¡2
+U
+java:S1481"3Remove this unused "usuarioService" local variable.(î€‹ÿÿÿÿÿ8Ã÷ÎÛ¡2
+G
+java:S1481	",Remove this unused "usuario" local variable.(¸ŠÙšüÿÿÿÿ
+J
+java:S1481"-Remove this unused "usuario2" local variable.(ÅŠîî8––ÉÛ¡2
+X	java:S125"<This block of commented-out lines of code should be removed.(¥±°›8š–ÉÛ¡2
+Q	java:S125"<This block of commented-out lines of code should be removed.(ßğù’
+V	java:S125"<This block of commented-out lines of code should be removed.(û«ÎÈùÿÿÿÿ
+X	java:S125"<This block of commented-out lines of code should be removed.(·‚ŠÉ8‘ ÌÛ¡2
+X	java:S125 "<This block of commented-out lines of code should be removed.(š»ûÅ8Ï÷ÎÛ¡2

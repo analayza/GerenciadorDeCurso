@@ -1,10 +1,23 @@
 
 ]
-java:S1854	";Remove this useless assignment to local variable "usuario".(¸ŠÙšüÿÿÿÿ8žºÊŒ¡2
+java:S1854";Remove this useless assignment to local variable "usuario".(¸ŠÙšüÿÿÿÿ8žºÊŒ¡2
 d
-java:S1854"BRemove this useless assignment to local variable "usuarioService".(î€‹žÿÿÿÿÿ8žºÊŒ¡2
+java:S1854"BRemove this useless assignment to local variable "usuarioService".(î€‹žÿÿÿÿÿ8žºÊŒ¡2
 U
-java:S1481"3Remove this unused "usuarioService" local variable.(î€‹žÿÿÿÿÿ8žºÊŒ¡2
+java:S1481"3Remove this unused "usuarioService" local variable.(î€‹žÿÿÿÿÿ8žºÊŒ¡2
 N
-java:S1481	",Remove this unused "usuario" local variable.(¸ŠÙšüÿÿÿÿ8žºÊŒ¡2
-]	java:S125"<This block of commented-out lines of code should be removed.(¥¼Ù¶ÿÿÿÿÿ8­ºÊŒ¡2
+java:S1481",Remove this unused "usuario" local variable.(¸ŠÙšüÿÿÿÿ8žºÊŒ¡2
+]	java:S125"<This block of commented-out lines of code should be removed.(¥¼Ù¶ÿÿÿÿÿ8­ºÊŒ¡2
+J
+java:S1128"(Remove this unused import 'domain.Aula'.(þ¬Æ¾úÿÿÿÿ8Å÷Ë¢2
+G
+java:S1128"*Remove this unused import 'domain.Modulo'.(ÅÄ‘“8Õ÷Ë¢2
+R
+java:S1128"0Remove this unused import 'service.AulaService'.(¨îÌŒøÿÿÿÿ8Ö÷Ë¢2
+O
+java:S1128"2Remove this unused import 'service.ModuloService'.(†›Û8×÷Ë¢2
+M
+java:S1128
+"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8æ÷Ë¢2
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ú÷Ë¢2

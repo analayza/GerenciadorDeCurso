@@ -3,6 +3,7 @@ package service;
 
 import dao.CursoDAO;
 import domain.Curso;
+import domain.Usuario;
 
 import java.util.List;
 
@@ -34,5 +35,13 @@ public class CursoService {
 
     public String deleteCurso(Long id){
         return this.cursoDAO.delete(id);
+    }
+
+    public void addUsuario(Long id_curso, Long id_usuario){
+        this.cursoDAO.addUsuarios(id_curso, id_usuario);
+    }
+
+    public void addModulo(Long id_curso, Long id_modulo){
+        this.cursoDAO.addModulo(id_curso, id_modulo);
     }
 }

@@ -1,0 +1,19 @@
+
+W
+java:S1854#";Remove this useless assignment to local variable "modulo2".(ßÄ8ùÀÌ¢2
+W
+java:S1854":Remove this useless assignment to local variable "modulo".(úÂÃ8ô­Ì¢2
+Z
+java:S1854"?Remove this useless assignment to local variable "aulaService".(‰‘©ûÿÿÿÿ
+c
+java:S1854"ARemove this useless assignment to local variable "moduloService".(Œ‡áöøÿÿÿÿ8ûÀÌ¢2
+T
+java:S1481"2Remove this unused "moduloService" local variable.(Œ‡áöøÿÿÿÿ8‚ÁÌ¢2
+K
+java:S1481"0Remove this unused "aulaService" local variable.(‰‘©ûÿÿÿÿ
+H
+java:S1481"+Remove this unused "modulo" local variable.(úÂÃ8Ÿ®Ì¢2
+X	java:S125!"<This block of commented-out lines of code should be removed.(¥˜¶¬8 ®Ì¢2
+H
+java:S1481#",Remove this unused "modulo2" local variable.(ßÄ8”ÁÌ¢2
+X	java:S125'"<This block of commented-out lines of code should be removed.(»¯¤ì8•ÁÌ¢2

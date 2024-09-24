@@ -1,2 +1,4 @@
 
-i	java:S116"MRename this field "Id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥’€î8ç®Ïã°2
+^
+java:S1710"<Remove the 'NamedQueries' wrapper from this annotation group(®ëØº˚ˇˇˇˇ8ÔÔÛÇ¢2
+i	java:S116"MRename this field "Id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥’€î8ç®Ïã°2
