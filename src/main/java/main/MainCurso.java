@@ -12,7 +12,7 @@ public class MainCurso {
                 .titulo("Python com Flask")
                 .build();
 
-        //cursoDao.saveCurso(curso2);
+        //cursoService.saveCurso(curso2);
 
         //var cursoExistente = cursoService.buscarPorId(2l);
 
@@ -22,7 +22,7 @@ public class MainCurso {
 
         //System.out.println(cursoService.listAllCurso());
 
-        cursoService.deleteCurso(2l);
+        //cursoService.deleteCurso(2l);
 
     }
 }
