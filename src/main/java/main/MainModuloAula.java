@@ -32,9 +32,9 @@ public class MainModuloAula {
 
         //moduloService.save(modulo);
 
-        var modulo2 = Modulo.builder().nome("Modulo 1").aula(List.of(
-                Aula.builder().titulo("Aula 1").url("www.catolica.com").build(),
-                Aula.builder().titulo("Aula 2").url("www.catolica.com").build())).build();
+//        var modulo2 = Modulo.builder().nome("Modulo 1").aula(List.of(
+//                Aula.builder().titulo("Aula 1").url("www.catolica.com").build(),
+//                Aula.builder().titulo("Aula 2").url("www.catolica.com").build())).build();
 
         //moduloService.save(modulo2);
     }
