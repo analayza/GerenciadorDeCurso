@@ -19,3 +19,13 @@ O
 src/main/java/dao/CursoDAO.java,5\e\5ebc1bc9fed1d6ce70d38b08a97a2717bac1c9af
 Q
 !src/main/java/main/MainCurso.java,6\f\6f2a603d88006028e80a0062230c13114d87c935
+S
+#src/main/java/main/MainUsuario.java,b\5\b514be7b0fc0b2c06c7db2bf788bd020ebd1732a
+V
+&src/main/java/main/MainModuloAula.java,a\b\ab46fd4eea442c7a3a5c44f43782f24f46483574
+P
+ src/main/java/domain/Modulo.java,d\b\dbada88de4394501ad0909ca6b974e91c3ea4a75
+P
+ src/main/java/dao/ModuloDAO.java,8\f\8ff4bbbd4828c577c6e96a68ee0d48e290867d2b
+X
+(src/main/java/service/ModuloService.java,a\7\a7f1854526a13cb41d5959724a716c49c18695bd

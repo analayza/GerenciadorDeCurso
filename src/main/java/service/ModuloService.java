@@ -32,4 +32,8 @@ public class ModuloService {
         moduloDAO.updateAulasEmModulos(id, aulas);
     }
 
+    public Modulo buscarId(Long id){
+       return moduloDAO.moduloById(id);
+    }
+
 }

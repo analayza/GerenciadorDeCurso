@@ -30,12 +30,12 @@ public class MainModuloAula {
 
         var modulo = Modulo.builder().nome("Modulo HTML e CSS").aula(aulas).build();
 
-        moduloService.save(modulo);
+        //moduloService.save(modulo);
 
         var modulo2 = Modulo.builder().nome("Modulo 1").aula(List.of(
                 Aula.builder().titulo("Aula 1").url("www.catolica.com").build(),
                 Aula.builder().titulo("Aula 2").url("www.catolica.com").build())).build();
 
-        moduloService.save(modulo2);
+        //moduloService.save(modulo2);
     }
 }

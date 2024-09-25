@@ -18,6 +18,7 @@ public class MainUsuario {
                 .senha("4321")
                 .tipo("aluno")
                 .build();
+
         //usuarioService.save(usuario2);
 
         //System.out.println(usuarioService.buscarPorId(1L));
