@@ -40,7 +40,11 @@ public class MainCurso {
 //
 //        cursoService.deleteCurso(2l);
 
-        System.out.println(cursoService.getMaxValue());
+        //System.out.println(cursoService.getMaxValue());
+
+        //cursoService.addUsuario(1l, 3l);
+
+        System.out.println(cursoService.buscarCursoProfessor("José"));
 
 
     }

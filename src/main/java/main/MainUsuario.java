@@ -18,8 +18,14 @@ public class MainUsuario {
                 .senha("4321")
                 .tipo("aluno")
                 .build();
+        var usuario3 = Usuario.builder()
+                .nome("José")
+                .email("jose@gmail.com")
+                .senha("4321")
+                .tipo("professor")
+                .build();
 
-        //usuarioService.save(usuario2);
+        usuarioService.save(usuario3);
 
         //System.out.println(usuarioService.buscarPorId(1L));
 

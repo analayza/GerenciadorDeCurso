@@ -48,4 +48,8 @@ public class CursoService {
     public Object getMaxValue(){
         return cursoDAO.getMaxValue();
     }
+
+    public List<Curso> buscarCursoProfessor(String nome){
+        return cursoDAO.buscarCursoProfessor(nome);
+    }
 }

@@ -95,4 +95,11 @@ public class CursoDAO {
                 .createNamedQuery("curso.getMaxValue");
         return query.getSingleResult();
     }
+
+    public List<Curso> buscarCursoProfessor(String nome){
+        jpaUtil.getEntityManager().getTransaction().begin();
+        var query = jpaUtil.getEntityManager().createNamedQuery("curso.buscarCursoProfessor");
+        query.setParameter("nomeProfessor", "%" + nome + "%");
+        return query.getResultList();
+    }
 }
