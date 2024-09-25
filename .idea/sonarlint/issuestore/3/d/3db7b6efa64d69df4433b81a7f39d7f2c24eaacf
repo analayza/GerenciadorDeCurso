@@ -3,5 +3,7 @@ r	java:S117("QRename this local variable to match the regular expression '^[a-
 r	java:S117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ²…‘üÿÿÿÿ8´¿ù‚¢2
 m	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÿÇ8ù‹œƒ¢2
 m	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÿÇ8ù‹œƒ¢2
+M
+java:S1128"+Remove this unused import 'domain.Usuario'.(«¹Áêÿÿÿÿÿ8Â÷™±¢2
 K
 java:S1068")Remove this unused "curso" private field.(Å§ü¸øÿÿÿÿ8ßÁÄ¢2

@@ -1,6 +1,6 @@
 
 f
-java:S1854%"DRemove this useless assignment to local variable "usuarioExistente".(éû†Ôûÿÿÿÿ8–À°ƒ¢2
+java:S1854%"DRemove this useless assignment to local variable "usuarioExistente".(éû†Ôûÿÿÿÿ8Ë‘Ö±¢2
 \
 java:S1854":Remove this useless assignment to local variable "curso2".(¶´Ë¥øÿÿÿÿ8–À°ƒ¢2
 W
@@ -15,12 +15,15 @@ W
 java:S2209"5Change this instance-reference to a static reference.(¶´Ë¥øÿÿÿÿ8¦À°ƒ¢2
 M
 java:S1481"+Remove this unused "curso2" local variable.(¶´Ë¥øÿÿÿÿ8¦À°ƒ¢2
-X	java:S125"<This block of commented-out lines of code should be removed.(™îûš8¶À°ƒ¢2
-X	java:S125"<This block of commented-out lines of code should be removed.(§Ã¨×8¶À°ƒ¢2
-X	java:S125"<This block of commented-out lines of code should be removed.(°°«ë8¶À°ƒ¢2
-X	java:S125"<This block of commented-out lines of code should be removed.(ˆÞÄú8¶À°ƒ¢2
-]	java:S125!"<This block of commented-out lines of code should be removed.(Íš–¡ûÿÿÿÿ8¶À°ƒ¢2
-]	java:S125#"<This block of commented-out lines of code should be removed.(Ä¾ƒ´üÿÿÿÿ8¶À°ƒ¢2
+X	java:S125"<This block of commented-out lines of code should be removed.(®ø”„8¶À°ƒ¢2
+X	java:S125"<This block of commented-out lines of code should be removed.(§Ã¨×8é‘Ö±¢2
+X	java:S125"<This block of commented-out lines of code should be removed.(°°«ë8é‘Ö±¢2
+X	java:S125"<This block of commented-out lines of code should be removed.(ˆÞÄú8é‘Ö±¢2
+]	java:S125!"<This block of commented-out lines of code should be removed.(Íš–¡ûÿÿÿÿ8é‘Ö±¢2
+]	java:S125#"<This block of commented-out lines of code should be removed.(Ä¾ƒ´üÿÿÿÿ8ê‘Ö±¢2
 W
-java:S1481%"5Remove this unused "usuarioExistente" local variable.(éû†Ôûÿÿÿÿ8¶À°ƒ¢2
-]	java:S125'"<This block of commented-out lines of code should be removed.(Üé‰÷ÿÿÿÿÿ8¶À°ƒ¢2
+java:S1481%"5Remove this unused "usuarioExistente" local variable.(éû†Ôûÿÿÿÿ8ë‘Ö±¢2
+]	java:S125'"<This block of commented-out lines of code should be removed.(Üé‰÷ÿÿÿÿÿ8ì‘Ö±¢2
+M
+java:S1128
+"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8Æì™±¢2
