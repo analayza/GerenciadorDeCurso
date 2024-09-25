@@ -36,4 +36,8 @@ public class ModuloService {
        return moduloDAO.moduloById(id);
     }
 
+    public void addAulas(Long id_modulo, Long id_aulas){
+        moduloDAO.addAulas(id_modulo,id_aulas);
+    }
+
 }

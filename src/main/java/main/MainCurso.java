@@ -22,7 +22,19 @@ public class MainCurso {
 
         //System.out.println(cursoService.listAllCurso());
 
+
+        //cursoService.deleteCurso(2l);
+
+        //var usuarioExistente = usuarioService.buscarPorId(3l);
+
+        //cursoService.addUsuario(1l, usuarioExistente.getId());
+
+        var moduloExistente = moduloService.buscarId(1l);
+
+        cursoService.addModulo(1l, moduloExistente.getId());
+
         cursoService.deleteCurso(2l);
+
 
     }
 }

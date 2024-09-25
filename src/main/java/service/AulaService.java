@@ -29,4 +29,8 @@ public class AulaService {
     public void updateURL(Long id, String url){
         aulaDAO.updateURL(id, url);
     }
+
+    public Aula aulaById(Long id){
+        return this.aulaDAO.aulaById(id);
+    }
 }
