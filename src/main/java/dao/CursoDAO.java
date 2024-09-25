@@ -1,7 +1,6 @@
 package dao;
 
 import domain.Curso;
-import domain.Usuario;
 import persistence.JPAUtil;
 
 import java.util.List;
@@ -88,5 +87,12 @@ public class CursoDAO {
         jpaUtil.getEntityManager().remove(deleteCurso);
         jpaUtil.getEntityManager().getTransaction().commit();
         return deleteCurso.getTitulo().concat("Foi removido com sucesso!");
+    }
+
+    public Object getMaxValue(){
+        jpaUtil.getEntityManager().getTransaction().begin();
+        var query = jpaUtil.getEntityManager()
+                .createNamedQuery("curso.getMaxValue");
+        return query.getSingleResult();
     }
 }

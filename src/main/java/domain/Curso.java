@@ -14,9 +14,10 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@NamedQueries(
-        @NamedQuery(name = "curso.getAll", query = "select c from Curso c")
-)
+@NamedQueries({
+        @NamedQuery(name = "curso.getAll", query = "select c from Curso c"),
+        @NamedQuery(name = "curso.getMaxValue", query = "select c from Curso c where c.valor = (select max(c2.valor) from Curso c2)")
+})
 public class Curso {
 
     @Id

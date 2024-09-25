@@ -44,4 +44,8 @@ public class CursoService {
     public void addModulo(Long id_curso, Long id_modulo){
         this.cursoDAO.addModulo(id_curso, id_modulo);
     }
+
+    public Object getMaxValue(){
+        return cursoDAO.getMaxValue();
+    }
 }

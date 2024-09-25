@@ -17,7 +17,7 @@ public class MainCurso {
                 .valor(new BigDecimal(300))
                 .build();
 
-        cursoService.saveCurso(curso2);
+        //cursoService.saveCurso(curso2);
 
         //var cursoExistente = cursoService.buscarPorId(2l);
 
@@ -39,6 +39,8 @@ public class MainCurso {
 //        cursoService.addModulo(1l, moduloExistente.getId());
 //
 //        cursoService.deleteCurso(2l);
+
+        System.out.println(cursoService.getMaxValue());
 
 
     }
