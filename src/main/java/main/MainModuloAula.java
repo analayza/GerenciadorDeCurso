@@ -38,7 +38,13 @@ public class MainModuloAula {
 
         var aulaExistente = aulaService.aulaById(6L);
 
+
         moduloService.addAulas(1l,aulaExistente.getId());
+
+//        var modulo2 = Modulo.builder().nome("Modulo 1").aula(List.of(
+//                Aula.builder().titulo("Aula 1").url("www.catolica.com").build(),
+//                Aula.builder().titulo("Aula 2").url("www.catolica.com").build())).build();
+
 
     }
 }
