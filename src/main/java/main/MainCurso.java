@@ -34,7 +34,7 @@ public class MainCurso {
 
         //cursoService.deleteCurso(2l);
 
-        var usuarioExistente = usuarioService.buscarPorId(3l);
+        //var usuarioExistente = usuarioService.buscarPorId(3l);
 
         //cursoService.addUsuario(1l, usuarioExistente.getId());
 

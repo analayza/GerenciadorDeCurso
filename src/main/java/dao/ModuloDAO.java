@@ -12,8 +12,11 @@ public class ModuloDAO {
 
     private JPAUtil jpaUtil;
 
+    private AulaDAO aulaDAO;
+
     public ModuloDAO(){
         jpaUtil = new JPAUtil();
+        this.aulaDAO = new AulaDAO();
     }
 
     public void save(Modulo modulo){
@@ -46,6 +49,28 @@ public class ModuloDAO {
         jpaUtil.getEntityManager().merge(moduloParaAlterar);
         jpaUtil.getEntityManager().getTransaction().commit();
         return moduloParaAlterar.getId().toString().concat(" alterado com sucesso!");
+    }
+
+    public void addAulas(Long id_modulo, Long id_aulas){
+        var idExiste = moduloById(id_modulo);
+        var idExisteModulo = aulaDAO.aulaById(id_aulas);
+        if(idExiste.getId() != null && idExisteModulo != null){
+
+            var query = jpaUtil.getEntityManager()
+                    .createNativeQuery("INSERT INTO modulo_aula (modulo_id, aula_id) " +
+                            "VALUES (:id_modulo, :id_aulas)");
+
+            query.setParameter("id_modulo", id_modulo);
+            query.setParameter("id_aulas", id_aulas);
+
+            query.executeUpdate();
+            jpaUtil.getEntityManager().getTransaction().commit();
+
+        }
+        else{
+            System.out.println("O Modulo ou a Aula, não existe");
+        }
+
     }
 
 }

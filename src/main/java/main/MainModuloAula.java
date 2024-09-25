@@ -23,6 +23,12 @@ public class MainModuloAula {
         aula2.setTitulo("HTML e CSS");
         aula2.setUrl("www.alura.com");
 
+        var aula3 = new Aula();
+        aula3.setTitulo("JavaScrip");
+        aula3.setUrl("www.alura.com");
+
+        //aulaService.save(aula3);
+
         var aulas = new ArrayList<Aula>();
 
         aulas.add(aula1);
@@ -30,12 +36,9 @@ public class MainModuloAula {
 
         var modulo = Modulo.builder().nome("Modulo HTML e CSS").aula(aulas).build();
 
-        //moduloService.save(modulo);
+        var aulaExistente = aulaService.aulaById(6L);
 
-        var modulo2 = Modulo.builder().nome("Modulo 1").aula(List.of(
-                Aula.builder().titulo("Aula 1").url("www.catolica.com").build(),
-                Aula.builder().titulo("Aula 2").url("www.catolica.com").build())).build();
+        moduloService.addAulas(1l,aulaExistente.getId());
 
-        //moduloService.save(modulo2);
     }
 }

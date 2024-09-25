@@ -1,6 +1,7 @@
 package dao;
 
 import domain.Aula;
+import domain.Curso;
 import domain.Modulo;
 import persistence.JPAUtil;
 
