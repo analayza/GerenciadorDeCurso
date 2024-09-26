@@ -1,6 +1,9 @@
 package dao;
 
+import domain.Aula;
 import domain.Curso;
+import domain.Modulo;
+import domain.Usuario;
 import persistence.JPAUtil;
 
 import java.util.List;
@@ -102,4 +105,63 @@ public class CursoDAO {
         query.setParameter("nomeProfessor", "%" + nome + "%");
         return query.getResultList();
     }
+
+    public List<Curso> buscarProfessoresModulosAulas(String tituloCurso) {
+        jpaUtil.getEntityManager().getTransaction().begin();
+        var query = jpaUtil.getEntityManager().createNamedQuery("curso.buscarProfessoresModulosAulas", Curso.class);
+        query.setParameter("tituloCurso", tituloCurso);
+        List<Curso> cursos = query.getResultList();
+
+        for (Curso curso : cursos) {
+            System.out.println("Curso: " + curso.getTitulo());
+            System.out.println("Valor: " + curso.getValor());
+
+            System.out.println("\tProfessores:");
+            for (Usuario usuario : curso.getUsuario()) {
+                if (usuario.getTipo().equals("professor")) {
+                    System.out.println("\t\tNome: " + usuario.getNome());
+                    System.out.println("\t\tEmail: " + usuario.getEmail());
+                }
+            }
+
+            System.out.println("\tMódulos:");
+            for (Modulo modulo : curso.getModulo()) {
+                System.out.println("\t\tMódulo: " + modulo.getNome());
+
+                // Aulas
+                System.out.println("\t\t\tAulas:");
+                for (Aula aula : modulo.getAula()) {
+                    System.out.println("\t\t\t\tTítulo: " + aula.getTitulo());
+                    System.out.println("\t\t\t\tURL: " + aula.getUrl());
+                }
+            }
+
+            System.out.println("---------------------------------------------------");
+        }
+
+
+        return cursos;
+    }
+
+    public List<Usuario> buscarAlunosPorCurso(String tituloCurso) {
+        jpaUtil.getEntityManager().getTransaction().begin();
+        var query = jpaUtil.getEntityManager().createNamedQuery("curso.buscarAlunosPorCurso", Usuario.class);
+        query.setParameter("tituloCurso", tituloCurso);
+        List<Usuario> alunos = query.getResultList();
+
+        System.out.println("Curso: " + tituloCurso);
+
+        System.out.println("\tAlunos:");
+        for (Usuario aluno : alunos) {
+            if (aluno.getTipo().equals("aluno")) {
+                System.out.println("\t\tNome: " + aluno.getNome());
+                System.out.println("\t\tEmail: " + aluno.getEmail());
+            }
+        }
+
+        System.out.println("---------------------------------------------------");
+
+        return alunos;
+    }
+
 }

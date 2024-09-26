@@ -17,8 +17,11 @@ import java.util.List;
 @NamedQueries({
         @NamedQuery(name = "curso.getAll", query = "select c from Curso c"),
         @NamedQuery(name = "curso.getMaxValue", query = "select c from Curso c where c.valor = (select max(c2.valor) from Curso c2)"),
-        @NamedQuery(name = "curso.buscarCursoProfessor", query = "SELECT c FROM Curso c JOIN c.usuario u WHERE u.nome LIKE :nomeProfessor AND u.tipo = 'professor'")
+        @NamedQuery(name = "curso.buscarCursoProfessor", query = "SELECT c FROM Curso c JOIN c.usuario u WHERE u.nome LIKE :nomeProfessor AND u.tipo = 'professor'"),
+        @NamedQuery(name = "curso.buscarProfessoresModulosAulas", query = "SELECT c FROM Curso c JOIN c.usuario u JOIN c.modulo m JOIN m.aula a WHERE c.titulo = :tituloCurso AND u.tipo = 'professor'"),
+        @NamedQuery(name = "curso.buscarAlunosPorCurso", query = "SELECT u FROM Curso c JOIN c.usuario u WHERE c.titulo = :tituloCurso AND u.tipo = 'aluno'")
 })
+
 public class Curso {
 
     @Id

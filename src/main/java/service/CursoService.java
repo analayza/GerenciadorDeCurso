@@ -52,4 +52,14 @@ public class CursoService {
     public List<Curso> buscarCursoProfessor(String nome){
         return cursoDAO.buscarCursoProfessor(nome);
     }
+
+    public List<Curso> buscarProfessoresModulosAulas(String titulo){
+        return cursoDAO.buscarProfessoresModulosAulas(titulo);
+    }
+
+    public List<Usuario> buscarAlunosPorCurso(String titulo){
+        return cursoDAO.buscarAlunosPorCurso(titulo);
+    }
+
 }
+
