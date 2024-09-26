@@ -19,7 +19,7 @@ import javax.validation.constraints.Size;
 @Entity
 
 @NamedQueries({
-        @NamedQuery(name= "usuarioGetAll", query = "select u from Usuario u")
+        @NamedQuery(name= "usuarioGetAll", query = "select u from Usuario u"),
 })
 public class Usuario {
 
