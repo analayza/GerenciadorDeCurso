@@ -6,7 +6,7 @@ import service.UsuarioService;
 public class MainUsuario {
     public static void main(String[] args) {
         var usuarioService = new UsuarioService();
-        var usuario = Usuario.builder()
+        var usuario1 = Usuario.builder()
                 .nome("Maria")
                 .email("maria@gmail.com")
                 .senha("1234")
@@ -19,22 +19,28 @@ public class MainUsuario {
                 .tipo("aluno")
                 .build();
         var usuario3 = Usuario.builder()
-                .nome("José")
-                .email("jose@gmail.com")
-                .senha("4321")
+                .nome("Laura")
+                .email("laura@gmail.com")
+                .senha("4451")
+                .tipo("professor")
+                .build();
+        var usuario4 = Usuario.builder()
+                .nome("Luan")
+                .email("luan@gmail.com")
+                .senha("5671")
                 .tipo("professor")
                 .build();
 
-        usuarioService.save(usuario3);
+        //usuarioService.save(usuario4);
 
-        //System.out.println(usuarioService.buscarPorId(1L));
+        //System.out.println(usuarioService.buscarPorId(5L));
 
         //System.out.println(usuarioService.listarUsuarios());
 
-        //var usuarioExistente = usuarioService.buscarPorId(1l);
+        //var usuarioExistente = usuarioService.buscarPorId(5l);
         //usuarioExistente.setNome("Maria Julia");
         //usuarioService.atualizarUsuario(usuarioExistente);
 
-        //usuarioService.deletarUsuario(2l);
+        //usuarioService.deletarUsuario(8l);
     }
 }

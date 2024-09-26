@@ -16,35 +16,28 @@ public class MainModuloAula {
         var aulaService = new AulaService();
 
         var aula1 = new Aula();
-        aula1.setTitulo("Introducao");
-        aula1.setUrl("www.alura.com");
+        aula1.setTitulo("JavaScript Moderno");
+        aula1.setUrl("https://www.youtube.com/watch?v=uzEhd3Lugik&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=3");
 
         var aula2 = new Aula();
-        aula2.setTitulo("HTML e CSS");
-        aula2.setUrl("www.alura.com");
-
-        var aula3 = new Aula();
-        aula3.setTitulo("JavaScrip");
-        aula3.setUrl("www.alura.com");
-
-        //aulaService.save(aula3);
+        aula2.setTitulo("Variaveis e Tipos Primitivos do JS");
+        aula2.setUrl("https://www.youtube.com/watch?v=Vbabsye7mWo&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=9");
 
         var aulas = new ArrayList<Aula>();
-
         aulas.add(aula1);
         aulas.add(aula2);
 
-        var modulo = Modulo.builder().nome("Modulo HTML e CSS").aula(aulas).build();
+        //var modulo = Modulo.builder().nome("Introdução ao Python").aula(aulas).build();
+        //moduloService.save(modulo);
 
-        var aulaExistente = aulaService.aulaById(6L);
+        var aula = Aula.builder()
+                .url("https://www.youtube.com/watch?v=Mp0vhMDI7fA&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=3")
+                .titulo("Introdução a Python")
+                .build();
+        //aulaService.save(aula);
 
-
-        moduloService.addAulas(1l,aulaExistente.getId());
-
-//        var modulo2 = Modulo.builder().nome("Modulo 1").aula(List.of(
-//                Aula.builder().titulo("Aula 1").url("www.catolica.com").build(),
-//                Aula.builder().titulo("Aula 2").url("www.catolica.com").build())).build();
-
+        //var aulaExistente = aulaService.aulaById(7L);
+        //moduloService.addAulas(5l,aulaExistente.getId());
 
     }
 }

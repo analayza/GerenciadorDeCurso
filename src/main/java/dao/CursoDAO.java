@@ -13,9 +13,12 @@ public class CursoDAO {
     private JPAUtil jpaUtil;
     private UsuarioDAO usuarioDAO;
 
+    private ModuloDAO moduloDAO;
+
     public CursoDAO(){
         jpaUtil = new JPAUtil();
         usuarioDAO = new UsuarioDAO();
+        moduloDAO =  new ModuloDAO();
     }
     public void save(Curso curso){
         jpaUtil.getEntityManager().getTransaction().begin();
@@ -65,7 +68,7 @@ public class CursoDAO {
 
     public void addModulo(Long id_curso, Long id_modulo){
         var idExiste = getById(id_curso);
-        var idExisteModulo = usuarioDAO.findById(id_modulo);
+        var idExisteModulo = moduloDAO.moduloById(id_modulo);
         if(idExiste.getId() != null && idExisteModulo != null){
 
             var query = jpaUtil.getEntityManager()
